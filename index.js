@@ -23,12 +23,9 @@ let notes = [
     }
 ]
 
+app.use(express.static('build'));
 app.use(cors());
 app.use(express.json());
-
-app.get('/', (req, res) => {
-    res.send('<h1>Hello</h1>');
-})
 
 app.get('/api/notes', (req, res) => {
     res.json(notes);
