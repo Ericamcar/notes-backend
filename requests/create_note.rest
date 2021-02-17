@@ -1,0 +1,23 @@
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+    "content": "Fake note",
+    "important": true
+}
+
+###
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+    "content": "Fake note"
+}
+
+###
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+    "important": true
+}
